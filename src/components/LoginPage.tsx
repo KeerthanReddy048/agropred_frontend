@@ -47,8 +47,8 @@ const LoginPage = () => {
     setSuccess('');
 
     const url = isSignUp
-      ? 'http://127.0.0.1:5000/api/register'
-      : 'http://127.0.0.1:5000/api/login';
+      ? 'http://10.24.60.177:7860/api/register'
+      : 'http://10.24.60.177:7860/api/login';
 
     const data = isSignUp
       ? {
