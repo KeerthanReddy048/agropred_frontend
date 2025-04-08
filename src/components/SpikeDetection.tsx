@@ -45,7 +45,7 @@ const SpikeDetection = () => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/spike-detection", {
+      const response = await fetch("http://10.24.60.177:7860/spike-detection", {
         method: "POST",
         body: formData,
       });
