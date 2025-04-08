@@ -21,7 +21,7 @@ const LoginPage = () => {
 
   const sendVerificationEmail = async (email) => {
     try {
-      const response = await fetch('http://10.24.60.177:7860/api/send-verification', {
+      const response = await fetch('https://keerthan048-agropredbackend.hf.space/api/send-verification', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,8 +47,8 @@ const LoginPage = () => {
     setSuccess('');
 
     const url = isSignUp
-      ? 'http://10.24.60.177:7860/api/register'
-      : 'http://10.24.60.177:7860/api/login';
+      ? 'https://keerthan048-agropredbackend.hf.space/api/register'
+      : 'https://keerthan048-agropredbackend.hf.space/api/login';
 
     const data = isSignUp
       ? {
