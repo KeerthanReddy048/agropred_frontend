@@ -21,7 +21,7 @@ const LoginPage = () => {
 
   const sendVerificationEmail = async (email) => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/send-verification', {
+      const response = await fetch('http://10.24.60.177:7860/api/send-verification', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
