@@ -41,7 +41,7 @@ const PredictionPage = () => {
 
     if (parsedInput && parsedInput.length === 24) {
       try {
-        const response = await fetch('http://localhost:5000/predict', {
+        const response = await fetch('http://10.24.60.177:7860/predict', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ ip: parsedInput.map(Number) })
