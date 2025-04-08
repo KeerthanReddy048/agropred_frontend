@@ -45,7 +45,7 @@ const SpikeDetection = () => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await fetch("http://10.24.60.177:7860/spike-detection", {
+      const response = await fetch("https://keerthan048-agropredbackend.hf.space/spike-detection", {
         method: "POST",
         body: formData,
       });
